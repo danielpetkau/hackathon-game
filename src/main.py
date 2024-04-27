@@ -8,8 +8,8 @@ def main():
         fallacy = game.pick_fallacy()
         conspiracy_theory = game.pick_conspiracy_theory()
 
-        input = "Use the " + fallacy + " to prove that " + conspiracy_theory + "."
-        prompt = llm.generate_prompt(input)
+        llm_input = "Use the " + fallacy + " to prove that " + conspiracy_theory + "."
+        prompt = llm.generate_prompt(llm_input)
 
         options = game.generate_options(fallacy)
 
@@ -23,3 +23,7 @@ def main():
             print("Correct!")
         else:
             print("Incorrect. The correct answer was: " + fallacy)
+            print("Game Over.")
+            loop = False
+
+main()
