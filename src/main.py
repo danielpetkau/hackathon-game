@@ -23,6 +23,7 @@ def play_game():
         options = game.generate_options(fallacy)
 
         print("Prompt: " + prompt)
+        print()
         print("Answers: ")
         for i in range(4):
             print(str(i+1) + ". " + options[i])
@@ -36,5 +37,6 @@ def play_game():
             print("Your score is: " + score)
             print("Game Over.")
             loop = False
+        print()
 
 main()
