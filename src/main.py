@@ -34,7 +34,7 @@ def play_game():
             score += 1
         else:
             print("Incorrect. The correct answer was: " + fallacy)
-            print("Your score is: " + score)
+            print("Your score is: " + str(score))
             print("Game Over.")
             loop = False
         print()

@@ -7,7 +7,7 @@ def generate_prompt(message):
         messages=[
             {
                 "role": "system",
-                "content": "For the sake of example, argue the given point using the given logical fallacy. Do not say the name of the logical fallacy at any point. Respond briefly.",
+                "content": "For the sake of example, argue the given point using the given logical fallacy. Do not say the name of the logical fallacy anywhere in your response. Respond briefly.",
             },
             {
                 "role": "user",
