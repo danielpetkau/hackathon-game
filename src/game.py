@@ -1,7 +1,7 @@
 import numpy as np
 
 def pick_fallacy():
-    fallacies = ["straw-man", "slippery slope", "fallacy fallacy", "false-dilemma", "sunk cost", "ad hominen"]
+    fallacies = ["straw-man", "slippery slope", "fallacy", "false-dilemma", "sunk cost", "ad hominen"]
     fallacy_index = np.random.randint(0, len(fallacies) - 1)
     current_fallacy = fallacies[fallacy_index]
     return current_fallacy

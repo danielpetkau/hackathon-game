@@ -14,7 +14,7 @@ def generate_prompt(message):
                 "content": message,
             }
         ],
-        model="phi3",
+        model="llama",
     )
 
     return chat_completion.choices[0].message.content

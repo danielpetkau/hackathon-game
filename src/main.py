@@ -17,7 +17,7 @@ def play_game():
         fallacy = game.pick_fallacy()
         conspiracy_theory = game.pick_conspiracy_theory()
 
-        llm_input = "Use the " + fallacy + " to prove that " + conspiracy_theory + "."
+        llm_input = "Use the " + fallacy + " fallacy to prove that " + conspiracy_theory + "."
         prompt = llm.generate_prompt(llm_input)
 
         options = game.generate_options(fallacy)
@@ -37,8 +37,4 @@ def play_game():
             print("Game Over.")
             loop = False
 
-
-
 main()
-play_game
-
